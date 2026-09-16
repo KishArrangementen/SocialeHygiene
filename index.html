@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dyslexievriendelijke oefenquiz voor Sociale Hygiëne, gemaakt van de aangeleverde theorie." />
+    <meta name="theme-color" content="#102a43" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Rustig Leren — Sociale Hygiëne</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102a43'/%3E%3Cpath d='M18 17h23a7 7 0 0 1 7 7v27H25a7 7 0 0 1-7-7V17Z' fill='%23fff'/%3E%3Cpath d='M25 17v27a7 7 0 0 0 7 7' fill='none' stroke='%2332c5a5' stroke-width='5'/%3E%3Cpath d='m31 32 5 5 10-12' fill='none' stroke='%23f6ad55' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Ga direct naar de quiz</a>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Rustig Leren, startpagina">
+        <span class="brand-mark" aria-hidden="true">✓</span>
+        <span><strong>Rustig Leren</strong><small>Sociale Hygiëne</small></span>
+      </a>
+      <div class="reading-tools" aria-label="Leesinstellingen">
+        <button id="read-page" class="tool-button" type="button">🔊 Voorlezen</button>
+        <button id="toggle-reading" class="tool-button" type="button" aria-pressed="false">Aa Rustig lezen</button>
+        <button id="font-down" class="tool-button compact" type="button" aria-label="Tekst kleiner">A−</button>
+        <button id="font-up" class="tool-button compact" type="button" aria-label="Tekst groter">A+</button>
+      </div>
+    </header>
+    <main id="app" tabindex="-1">
+      <section class="loading-card" aria-live="polite">
+        <span class="loader" aria-hidden="true"></span>
+        <h1>Je oefenprogramma wordt klaargezet…</h1>
+      </section>
+    </main>
+    <noscript>Voor deze quiz moet JavaScript aanstaan.</noscript>
+    <script src="questions.js"></script>
+    <script src="extra-questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
